@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Contact</title>
+</head>
+<body>
+    <h1>Add New Contact</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>Name:</label><br>
+        <input type="text" name="name"><br>
+        <label>Phone:</label><br>
+        <input type="text" name="phone"><br>
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+        <button type="submit">Save</button>
+    </form>
+    <a href="/">Back to list</a>
+</body>
+</html>

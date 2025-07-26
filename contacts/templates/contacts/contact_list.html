@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact List</title>
+</head>
+<body>
+    <h1>Contact List</h1>
+    <a href="/create/">Add New Contact</a>
+    <ul>
+        {% for contact in contacts %}
+            <li>{{ contact.name }} - {{ contact.phone }} - {{ contact.email }}</li>
+        {% empty %}
+            <li>No contacts yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
